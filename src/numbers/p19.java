@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //write a program to check the emirp no or not
 public class p19 {
-	public static boolean prime(int n) {
+	public static boolean prime(int n) {//see whether this no is prime or not
 		boolean flag = true;
 		for(int i = 2;i<=n/2;i++) {
 			if(n%i==0) {
@@ -14,6 +14,8 @@ public class p19 {
 		}
 		return flag;
 	}
+	//after checking the number reverse it and see whether the no is prime or not
+	//that is emirp no
 	public static int rev(int n) {
 		int temp = n;
 		int rem  = 0;
