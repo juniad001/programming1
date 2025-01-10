@@ -7,11 +7,11 @@ public class p20 {
 	public static boolean techno(int n,int digits) {
 		int x = 1;
 		for(int i = 0;i<digits/2;i++) {
-			x *= 10;
+			x *= 10; //here the values will be 10 or 100 based on conditions
 		}
-		int n1 = n/x;
-		int n2 = n%x;
-		int sum = (n1+n2) * (n1+n2);
+		int n1 = n/x; //here we divide
+		int n2 = n%x;//here we take modulus
+		int sum = (n1+n2) * (n1+n2); //here we add qoutient and remainder
 		if(sum==n) return true;
 		else return false;
 	}
